@@ -1,0 +1,40 @@
+
+################################################################
+[1m[32mInstall script for stable-diffusion + Web UI
+[1m[34mTested on Debian 11 (Bullseye), Fedora 34+ and openSUSE Leap 15.4 or newer.[0m
+################################################################
+
+################################################################
+Running on [1m[32mluowei[0m user
+################################################################
+
+################################################################
+Repo already cloned, using it as install directory
+################################################################
+
+################################################################
+Create and activate python venv
+################################################################
+
+################################################################
+Launching launch.py...
+################################################################
+glibc version is 2.36
+Check TCMalloc: libtcmalloc_minimal.so.4
+libtcmalloc_minimal.so.4 is linked with libc.so,execute LD_PRELOAD=/lib/x86_64-linux-gnu/libtcmalloc_minimal.so.4
+Python 3.11.0 (main, Mar 22 2025, 20:02:19) [GCC 12.2.0]
+Version: v1.10.1
+Commit hash: 82a973c04367123ae98bd9abdf80d9eda9b910e2
+Launching Web UI with arguments: --listen --port 8860 --enable-insecure-extension-access --api --theme dark --xformers --medvram --opt-split-attention
+/opt/docker/sdwebui/venv/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Loading weights [6ce0161689] from /opt/docker/sdwebui/models/Stable-diffusion/v1-5-pruned-emaonly.safetensors
+Running on local URL:  http://0.0.0.0:8860
+
+To create a public link, set `share=True` in `launch()`.
+Startup time: 4.8s (prepare environment: 1.0s, import torch: 1.8s, import gradio: 0.4s, setup paths: 0.7s, initialize shared: 0.2s, other imports: 0.1s, load scripts: 0.2s, create ui: 0.3s, add APIs: 0.1s).
+Creating model from config: /opt/docker/sdwebui/configs/v1-inference.yaml
+/opt/docker/sdwebui/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:797: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Applying attention optimization: xformers... done.
+Model loaded in 2.2s (load weights from disk: 0.5s, load config: 0.2s, create model: 0.2s, apply weights to model: 0.8s, apply half(): 0.4s, calculate empty prompt: 0.1s).
