@@ -61,9 +61,10 @@ start() {
         fi
         
         echo "sdwebui 启动中..."
+        
+        popd  # 返回原始目录
     fi
     
-    popd  # 返回原始目录
 }
 
 stop() {
