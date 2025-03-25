@@ -40,5 +40,7 @@ notification.mp3
 /.coverage*
 /test/test_outputs
 /cache
+/result
 trace.json
 /sysinfo-????-??-??-??-??.json
+/webui.log
